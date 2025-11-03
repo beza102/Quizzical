@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif; 
+}
+
+body {
+    margin: 0;
+    background-color: #F5F7FB;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    width: 650px; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px;
+}
+
+
+.start-screen {
+    text-align: center;
+    padding: 50px;
+}
+
+.title {
+    color: #293264;
+    font-size: 32px;
+}
+
+.description {
+    color: #293264;
+    margin-bottom: 25px;
+}
+
+.start-button, .check-button {
+    background-color: #4D5B9E;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* --- Quiz Screen Styling --- */
+.quiz-container {
+    padding: 30px;
+}
+
+.loading-text {
+    text-align: center;
+    color: #293264;
+}
+
+.question-block {
+    margin-bottom: 20px;
+}
+
+.question-text {
+    color: #293264;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.answer-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.answer-option {
+    border: 0.8px solid #4D5B9E;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #293264;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* SELECTION STATE */
+.answer-option.selected {
+    background-color: #D6DBF5;
+    border-color: #D6DBF5;
+}
+
+
+/* Correct Answer */
+.answer-option.correct {
+    background-color: #94D7A2;
+    border-color: #94D7A2;
+    opacity: 1;
+    font-weight: 700;
+}
+
+/* Incorrect Answer (Selected, but wrong) */
+.answer-option.incorrect {
+    background-color: #F8BCBC;
+    border-color: #F8BCBC;
+    opacity: 0.5;
+}
+
+/* Dim unselected wrong answers */
+.answer-option.dim {
+    opacity: 0.5;
+}
+
+
+
+.quiz-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.score-text {
+    color: #293264;
+    font-weight: 700;
+    margin-right: 20px;
+}
